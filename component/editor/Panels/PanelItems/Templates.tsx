@@ -52,7 +52,7 @@ function Templates() {
   }
 
   return (
-    <div style={{ display: 'flex', height: '100%', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', height: '100%', flexDirection: 'column'}}>
       <div style={{ padding: '2rem 2rem' }}>
         <Input
           startEnhancer={() => <Icons.Search size={18} />}
