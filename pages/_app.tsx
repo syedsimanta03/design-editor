@@ -4,9 +4,9 @@ import '../styles/animation.scss'
 
 import Providers from '@contexts/Providers'
 import Container from '@contexts/Container'
+import type { AppProps } from 'next/app'
 
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
    <Providers>
    <Container>
