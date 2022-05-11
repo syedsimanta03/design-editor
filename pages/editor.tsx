@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Header from 'component/Header'
+//import Link from 'next/link';
+//import Header from 'component/Header'
 import withSession, { ServerSideProps } from '../lib/withSession';
 import Editor, { useEditor } from '@sdk'
 import { useEffect } from 'react';
@@ -7,7 +7,7 @@ import useAppContext from '@hooks/useAppContext';
 import { getElements } from '@store/slices/elements/actions'
 import { getFonts } from '@store/slices/fonts/actions'
 import { useAppDispatch } from '@store/store'
-import Navbar from '@component/editor/Navbar'
+//import Navbar from '@component/editor/Navbar'
 import Panels from '@component/editor/Panels'
 import Toolbox from '@component/editor/Toolbox'
 import Footer from '@component/editor/Footer'
@@ -20,7 +20,7 @@ type Props = {
   };
 };
 
-function App({ location }, props) {
+const App = ({ location }: any, props: { user: any; }) => {
   const { user } = props;
   const { setCurrentTemplate } = useAppContext()
   const editor = useEditor()
