@@ -57,7 +57,7 @@ const App = ({ location }: any, props: { user: any; }) => {
   }, [id, editor, location])
   return (
     <>
-    { !user ?
+    { user ?
       ( <div /> ):
         <div className='height-100 mt-5 pt-5 mr-5 ml-5'>
           {/* <Header/> */}
