@@ -1,0 +1,92 @@
+$red: black;
+$black: white;
+
+.hamburger-menu {
+    display: none;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transition: 3s;
+    .menu-secondary-background-color {
+      background: gray;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+    .menu-layer {
+      position: relative;
+      background: #0F141E;
+      height: 100%;
+      overflow: hidden;
+      
+      .wrapper {
+        .menu-links {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: relative;
+          top: 200px;
+          color: white;
+          nav {
+            display: block;
+            ul {
+              margin: 0;
+              padding: 0;
+              li {
+                list-style: none;
+                .text-menu{
+                    font-size: 48px;
+                    font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .input-card {
+    margin-top: 40px;
+    width: 500px;
+    padding: 24px;
+    height: 300px;
+    backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 16px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.info {
+  color: #fff;
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+  h3 {
+    font-size: 1.2rem;
+    margin: 0px auto;
+    margin-bottom: 15px;
+  }
+}
+select {
+  border: 0px solid #fff;
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+.output-card{
+  background-color: #610BEF;
+  width: 100%;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}

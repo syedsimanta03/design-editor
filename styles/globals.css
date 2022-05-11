@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/inter-font/Inter-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/inter-font/Inter-Light.ttf");
+  font-style: lighter;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/inter-font/Inter-SemiBold.ttf");
+  font-style: lighter;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/inter-font/Inter-Bold.ttf");
+  font-style: lighter;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlusJakartaBold";
+  src: url("/plusjakarta-font/PlusJakartaSans-Bold.ttf");
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlusJakartaMedium";
+  src: url("/plusjakarta-font/PlusJakartaSans-Medium.ttf");
+  font-style: medium;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlusJakarta";
+  src: url("/plusjakarta-font/PlusJakartaSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.highlights{
+  color: white;
+}
+figcaption {
+  color: darkgrey;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'PlusJakartaBold';
+}
+input {
+  font-family: 'Inter';
+}
+h1{
+  font-size: 3em;
+}
+h2{
+  font-size: 2.5em;
+}
+h3{
+  font-size: 2em;
+}
+button {
+  font-family: 'PlusJakartaMedium';
+}
+iframe{
+  z-index: 5;
+  transition: 3s;
+}
+body {
+  font-family: 'Inter';
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.form-control {
+  background: #EFF0F6;
+  border: 0;
+}
+b{
+  font-weight: 600;
+}
+.gradient-text{
+  background: linear-gradient(125.3deg, #3F3CFF 39.61%, #6FF5F5 73.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.secondary-gradient-text{
+  color: #ff5c77;
+}
+.font-light{
+  font-weight: 200;
+}
+.font-bold{
+  font-family: 'PlusJakartaBold';
+  font-weight: 700;
+}
+.hero-title{
+  font-size: 3em;
+  margin-top: 30px;
+}
+.subtitle{
+  font-size: 20px;
+}
+.max-width-800{
+  max-width: 800px;
+}
+.max-width-400{
+  max-width: 400px;
+}
+.max-width-200{
+  max-width: 240px;
+}
+.mt-10{
+  margin-top: 10em;
+}
+.text-none {
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  border: 0;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.form-control{
+  height: 50px;
+  border-radius: 12px;
+}
+.btn-primary {
+  background-color:#4F28FF;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(76, 32, 255, 0.7);
+}
+
+.btn-secondary{
+  width: 100%;
+  background-color: #8728FF;
+  box-shadow: 0px 4px 20px #8728FF;
+}
+.btn-primary-outline{
+  color: black;
+  transition: 0.3s;
+  border: 2px solid black;
+}
+.btn-primary-outline:hover{
+  color: white;
+  background-color: #090909;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-small {
+  font-size: 14px;
+}
+.text-grey{
+  color: rgb(108, 108, 108);
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+.container--waitlistapi {
+  margin: 0 auto; 
+  font-family: 'PlusJakartaMedium' !important;
+}
+.button--waitlistapi {
+  background-color:#4F28FF !important;
+  box-shadow: 0px 4px 20px rgba(76, 32, 255, 0.7);
+  font-family: 'PlusJakartaMedium' !important;
+}
+.statusTextContainer--waitlistapi {
+  color: #000000;
+  font-family: 'Inter' !important;
+}
+
+.referralLinkField--text {
+  color: #000000;
+  font-family: 'Inter' !important;
+}
+.resend-button{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(41, 41, 41);
+}
+.auth-screen{
+  height: 100vh;
+  background-image: url('/gradients/cathleen_sdreamland.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 0.1px solid rgb(221, 221, 221);
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.card-sign-in {
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 16px;
+  margin: 48px;
+  padding: 3em;
+}
+
+.gradient-card {
+  border-radius: 14px;
+  height: 250px;
+}
+.gradient-card-first {
+  border-radius: 14px;
+  height: 250px;
+  background-image: url('/gradients/aqua.png');
+  background-size: cover;
+}
+.height-100 {
+  height: 100vh;
+}
+.gradient-card-second {
+  border-radius: 14px;
+  height: 250px;
+  background-image: url('/gradients/dusk.png');
+  background-size: cover;
+}
+.gradient-card-square{
+  background-color: #6FF5F5;
+  border-radius: 14px;
+  height: 240px;
+  width: 240px;
+}
+
+.button-input-card{
+  background-color: #121212;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0 0 16px 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  font-family: 'Inter' !important;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.button-input-card:hover{
+  background-color: #000000;
+}
+.input-field-copywriting{
+  color: white;
+  background-color: inherit;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 150px;
+}
+.copywriting-output{
+  font-family: 'PlusJakarta';
+  font-size: 0.9em;
+}
