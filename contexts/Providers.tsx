@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Server as Styletron } from 'styletron-engine-atomic'
+import { styletron} from './styletron'
 import { Provider as StyletronProvider } from 'styletron-react'
 import { PersistGate } from 'redux-persist/integration/react'
 import { LightTheme, BaseProvider } from 'baseui'
@@ -8,7 +8,7 @@ import { AppProvider } from './AppContext'
 import { store, persistor } from '@store/store'
 import { Provider } from 'react-redux'
 
-const engine = new Styletron()
+const engine = styletron
 
 const Providers: FC = ({ children }) => {
   return (

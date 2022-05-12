@@ -1,35 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Grammable** is a [Next.js](https://nextjs.org/) bootstrapped project with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 💫Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
+yarn install
 # or
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- yarn for installing packages or package management. Alternatively npm can be used.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- TS config that using esnext and extends `tsconfigExtra` config with base directories.
 
-## Learn More
+- commonjs module targeting module format/feature by commonjs 
 
-To learn more about Next.js, take a look at the following resources:
+- redux for maning state globally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- redux provider which is used inside __app.tsx to flow data on other components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- pages folder contains all pages that shows on front-end
 
-## Deploy on Vercel
+- components folder has all the components used on this app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- .env contains all environment variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# davinci
+- store -> where we have all redux code. 
+
+- Turned off immutableCheck & serializableCheck to avoid timeout err as the app is huge also we could increase time limit.
+  
+  
+  
+  ---
+  
+  > There we many errors like package import wasn't correct or typos, code logic err like show editor page when user not loggedin but I'm already loggedin as homepage is login page to enter the app. 
