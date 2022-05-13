@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import useAppContext from '@hooks/useAppContext'
 import Resize from './components/Resize'
 import PreviewTemplate from './components/PreviewTemplate'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory as useNavigate, useParams } from 'react-router-dom'
 
 import api from '@services/api'
 import { useAppDispatch } from '@store/store'
@@ -36,7 +36,7 @@ function useParamId() {
 function NavbarEditor() {
   const editor = useEditor()
   const { currentTemplate } = useAppContext()
-  const history = useHistory()
+  const history = useNavigate()
   const [name, setName] = useState('Untitled design')
   const id = useParamId()
   const dispatch = useAppDispatch()
