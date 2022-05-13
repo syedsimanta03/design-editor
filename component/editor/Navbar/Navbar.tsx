@@ -13,9 +13,10 @@ import api from '@services/api'
 import { useAppDispatch } from '@store/store'
 import { setCreations, updateCreationsList } from '@store/slices/creations/actions'
 import History from './components/History'
+/* tslint:disable */
 const Container = styled('div', props => ({
   height: '70px',
-  background: props.$theme.colors.background,
+  /* background: props.$theme.colors.background, */
   display: 'flex',
   padding: '0 0.5rem',
   justifyContent: 'space-between',
