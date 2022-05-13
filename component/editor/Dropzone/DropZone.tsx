@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
- // eslint-disable 
+ /* tslint:disable */
+ /* eslint-disable */
+ 
 const DropZone = ({ children, handleDropFiles }: any) => {
   const [isDragging, setIsDragging] = useState(false)
   let dragCounter = 0
