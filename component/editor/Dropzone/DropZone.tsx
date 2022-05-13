@@ -24,11 +24,11 @@ const DropZone = ({ children, handleDropFiles }: any) => {
     }
    
   }, [])
-  const handleDrag = (e: { preventDefault: () => void; stopPropagation: () => void }) => {
+  const handleDrag = (e) => {
     e.preventDefault()
     e.stopPropagation()
   }
-  const handleDragIn = (e: { preventDefault: () => void; stopPropagation: () => void; dataTransfer: { items: string | any[] } }) => {
+  const handleDragIn = (e) => {
     e.preventDefault()
     e.stopPropagation()
     dragCounter++
@@ -36,7 +36,7 @@ const DropZone = ({ children, handleDropFiles }: any) => {
       setIsDragging(true)
     }
   }
-  const handleDragOut = (e: { preventDefault: () => void; stopPropagation: () => void }) => {
+  const handleDragOut = (e) => {
     e.preventDefault()
     e.stopPropagation()
     dragCounter--
@@ -44,7 +44,7 @@ const DropZone = ({ children, handleDropFiles }: any) => {
 
     setIsDragging(false)
   }
-  const handleDrop = (e: { preventDefault: () => void; stopPropagation: () => void; dataTransfer: { files: string | any[]; clearData: () => void } }) => {
+  const handleDrop = (e) => {
     e.preventDefault()
     e.stopPropagation()
     setIsDragging(false)
