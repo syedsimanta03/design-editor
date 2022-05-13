@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
+ // eslint-disable 
 const DropZone = ({ children, handleDropFiles }: any) => {
   const [isDragging, setIsDragging] = useState(false)
   let dragCounter = 0
@@ -21,13 +22,13 @@ const DropZone = ({ children, handleDropFiles }: any) => {
         div.removeEventListener('drop', handleDrop)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [])
-  const handleDrag = e => {
+  const handleDrag = (e: { preventDefault: () => void; stopPropagation: () => void }) => {
     e.preventDefault()
     e.stopPropagation()
   }
-  const handleDragIn = e => {
+  const handleDragIn = (e: { preventDefault: () => void; stopPropagation: () => void; dataTransfer: { items: string | any[] } }) => {
     e.preventDefault()
     e.stopPropagation()
     dragCounter++
@@ -35,7 +36,7 @@ const DropZone = ({ children, handleDropFiles }: any) => {
       setIsDragging(true)
     }
   }
-  const handleDragOut = e => {
+  const handleDragOut = (e: { preventDefault: () => void; stopPropagation: () => void }) => {
     e.preventDefault()
     e.stopPropagation()
     dragCounter--
@@ -43,7 +44,7 @@ const DropZone = ({ children, handleDropFiles }: any) => {
 
     setIsDragging(false)
   }
-  const handleDrop = e => {
+  const handleDrop = (e: { preventDefault: () => void; stopPropagation: () => void; dataTransfer: { files: string | any[]; clearData: () => void } }) => {
     e.preventDefault()
     e.stopPropagation()
     setIsDragging(false)
