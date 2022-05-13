@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import useAppContext from '@hooks/useAppContext'
 import Resize from './components/Resize'
 import PreviewTemplate from './components/PreviewTemplate'
-import { useHistory as useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 import api from '@services/api'
 import { useAppDispatch } from '@store/store'
